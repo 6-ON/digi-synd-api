@@ -1,7 +1,7 @@
 import { ObjectId } from "mongoose";
 
 export type TJwtPayload = {
-	sub: ObjectId;
+	sub: ObjectId | string;
 	username?: string;
 	email?: string;
 };
