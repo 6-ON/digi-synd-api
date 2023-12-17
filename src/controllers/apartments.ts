@@ -26,7 +26,7 @@ class Controller {
 			forbidNonWhitelisted: true,
 		});
 		return res
-			.status(200)
+			.status(201)
 			.json(await ApartmentService.create(payload, req.user));
 	}
 	async update(req: Request, res: Response) {
