@@ -1,5 +1,3 @@
-import "reflect-metadata";
-
 import app from "./app";
 import { connectToDb } from "@/db";
 const port = process.env.PORT || 3000;
