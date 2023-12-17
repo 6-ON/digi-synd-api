@@ -8,7 +8,6 @@ import { Error } from "mongoose";
 class Service {
 	async findByMonth(month: Date, creator: IUserModel) {
 		try {
-			console.log(month.getMonth(), month.getFullYear());
 
 			const apartments = await Apartment.aggregate()
 				.match({
