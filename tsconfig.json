@@ -21,6 +21,4 @@
 		"require": ["tsconfig-paths/register"],
 		"files": true
 	},
-	"include": ["src/**/*", ".eslintrc.js"],
-	"exclude": ["node_modules", "**/*.spec.ts"]
 }
