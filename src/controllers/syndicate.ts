@@ -10,7 +10,7 @@ class Controller {
 		Object.assign(payload, req.body);
 		await validateOrReject(payload);
 		await UserService.create(payload, Roles.SYNDICATE);
-		return res.status(200).json(payload);
+		return res.status(201).json(payload);
 	}
 }
 export const SyndicateController = new Controller();
