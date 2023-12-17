@@ -5,7 +5,6 @@ export const requireOwner = (
 	res: Response,
 	next: NextFunction,
 ) => {
-	console.log(req.user, req.apartment);
 	
 	if (
 		req.user &&
