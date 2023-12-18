@@ -14,7 +14,9 @@ class Controller {
 	async create(req: Request, res: Response) {
 		const payload = plainToInstance(MonthDto, req.body);
 		await validateOrReject(payload);
-		return res.status(200).json(await FactureService.create(req.body, req.apartment!, req.user));
+		return res
+			.status(201)
+			.json(await FactureService.create(req.body, req.apartment!, req.user));
 	}
 }
 export const FactureController = new Controller();
