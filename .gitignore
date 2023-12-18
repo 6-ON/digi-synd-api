@@ -1,6 +1,6 @@
 .env
 dist
 node_modules
-
+coverage
 # Logs
 logs
